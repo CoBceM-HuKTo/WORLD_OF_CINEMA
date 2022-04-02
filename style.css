@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Condensed:wght@700&display=swap');
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 1000vw;
+    letter-spacing: 0.1vw;
+}
+
+body {
+    background: black;
+    background-image: url(img/background1.png);
+    background-size: 100%;
+}
+
+.head-menu {
+    position: fixed;
+    left: -1vw;
+    top: -0.1vw;
+    width: 99.69vw;
+    height: 5vw;
+    background: black;
+    border-bottom: 0.1vw solid red;
+    z-index: 10;
+}
+
+.logo {
+    position: relative;
+    top: 1vw;
+    left: 7vw;
+    width: 2.5vw;
+    transition: 1s;
+}
+
+.logo:hover {
+    filter: invert(100%);
+}
+
+
+.logo-text {
+    position: relative;
+    top: 0.5vw;
+    left: 8vw;
+    color: white;
+    font-size: 2.2vw;
+    text-decoration-line: none;
+    transition: 1s;
+    border-bottom: 0.2vw solid white;
+    border-top: 0.2vw solid white;
+}
+
+.logo-text:hover {
+    border-bottom: 0.2vw solid #b30c00;
+    border-top: 0.2vw solid #b30c00;
+}
+
+.order {
+    position: absolute;
+    text-decoration-line: none;
+    color: white;
+    top: 45vw;
+    left: 38vw;
+    font-size: 1.5vw;
+    background: #b30c00;
+    padding: 1vw;
+    padding-top: 1.1vw;
+    border-radius: 0.5vw;
+    transition: 1s;
+}
+
+.order2:hover {
+    background: white;
+    color: #b30c00;
+}
+
+.order2 {
+    position: absolute;
+    text-decoration-line: none;
+    color: white;
+    top: 90vw;
+    left: 39vw;
+    font-size: 1.5vw;
+    background: #b30c00;
+    padding: 1vw;
+    padding-top: 1.1vw;
+    border-radius: 0.5vw;
+    transition: 1s;
+}
+
+.order:hover {
+    background: white;
+    color: #b30c00;
+}
+
+.h1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+.one {
+    top: 6vw;
+    left: 38vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    border-top-left-radius: 4vw;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.two {
+    top: 55vw;
+    left: 40vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1.8vw;
+    background: rgba(0, 0, 0, 0.52);
+    border-top-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+.three {
+    top: 108vw;
+    left: 38vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1.8vw;
+    background: rgba(0, 0, 0, 0.52);
+    border-top-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+.red {
+    color: #b30c00;
+}
+
+.reclam {
+    color: white;
+    position: absolute;
+    top: 11.9vw;
+    left: 38vw;
+    font-size: 1.3vw;
+    letter-spacing: 0.vw;
+    background: rgba(0, 0, 0, 0.52);
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+    padding-top: 3.5vw;
+    padding-bottom: 2vw;
+    border-bottom-right-radius: 4vw;
+}
+
+.cinemaline_button {
+    position: absolute;
+    top: 1vw;
+    right: 15vw;
+    color: white;
+    font-size: 2vw;
+    text-decoration-line: none;
+    transition: 1s;
+    border-bottom: 0.2vw solid white;
+    border-top: 0.2vw solid white;
+}
+
+.cinemaline_button:hover {
+    border-bottom: 0.2vw solid #b30c00;
+    border-top: 0.2vw solid #b30c00;
+}
+
+.contacts_button {
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    color: white;
+    font-size: 2vw;
+    text-decoration-line: none;
+    transition: 1s;
+    border-bottom: 0.2vw solid white;
+    border-top: 0.2vw solid white;
+}
+
+.contacts_button:hover {
+    border-bottom: 0.2vw solid #b30c00;
+    border-top: 0.2vw solid #b30c00;
+}
+
+.help {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background: rgba(0, 0, 0, 0.52);
+    border-radius: 1vw;
+    width: 90vw;
+    font-size: 1vw;
+    left: 4vw;
+}
+
+.one1 {
+    top: 65vw;
+}
+
+.two2 {
+    top: 70vw;
+}
+
+
+.three3 {
+    top: 75vw;
+}
+
+.was_be1 {
+    position: absolute;
+    width: 96.2vw;
+    left: -0.1vw;
+    background: rgba(0, 0, 0, 0.52);
+    top: 120vw;
+    color: white;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 16vw;
+}
+
+.h2 {
+    position: relative;
+    font-size: 1.2vw;
+    letter-spacing: 0;
+    top: 2vw;
+}
+
+
+.line {
+    background: #b30c00;
+    width: 94.5vw;
+    position: relative;
+    height: 0.2vw;
+    left: 0vw;
+    top: 3vw;
+    
+}
+
+.reclam2 {
+    position: relative;
+    top: 4vw;
+    font-size: 1vw;
+}
+
+.was_be2 {
+    position: absolute;
+    width: 96.2vw;
+    left: -0.1vw;
+    background: rgba(0, 0, 0, 0.52);
+    top: 140vw;
+    color: white;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 12vw;
+}
+
+.was_be3 {
+    position: absolute;
+    width: 96.2vw;
+    left: -0.1vw;
+    background: rgba(0, 0, 0, 0.52);
+    top: 156vw;
+    color: white;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 12vw;
+}
+
+.was_be4 {
+    position: absolute;
+    width: 96.2vw;
+    left: -0.1vw;
+    background: rgba(0, 0, 0, 0.52);
+    top: 172vw;
+    color: white;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 12vw;
+}
+
+.was_be5 {
+    position: absolute;
+    width: 96.2vw;
+    left: -0.1vw;
+    background: rgba(0, 0, 0, 0.52);
+    top: 188vw;
+    color: white;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 19vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
