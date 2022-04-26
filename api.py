@@ -5,7 +5,8 @@ import pygame
 import requests
 
 # 65.550300 57.143112
-ll = ','.join(input('введите координаты (через пробел) ').split())
+ll = "65.550300 57.143112".split(' ')
+ll = ','.join(ll)
 zoom = 18
 map_request = f"http://static-maps.yandex.ru/1.x/?ll={ll}&z={zoom}&l=map"
 response = requests.get(map_request)
