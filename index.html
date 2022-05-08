@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-<!--    <link rel="stylesheet" href="style.css">-->
     <link rel="icon" href="img/logo.png">
     <title>МИР КИНО</title>
             <style>
-        
+
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Condensed:wght@700&display=swap');
 
 html {
@@ -321,7 +319,7 @@ body {
     height: 0.2vw;
     left: 0vw;
     top: 3vw;
-    
+
 }
 
 .reclam2 {
@@ -838,41 +836,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .name {
     font-size: 2.3vw;
 }
@@ -902,7 +865,7 @@ body {
 
 .hh1 {
     position: relative;
-    
+
     left: 2vw;
 }
 
@@ -1283,11 +1246,18 @@ body {
 
 
 
-
-
-
-
-
+.carta {
+    position: absolute;
+    top: 725vw;
+    left: 0;
+    color: white;
+    font-size: 2vw;
+    background: black;
+    width: 100vw;
+    height: 45vw;
+    padding-top: 2vw;
+    text-align: center;
+}
 
 
 
@@ -1298,9 +1268,9 @@ body {
 <div class="head-menu">
     <a href="index.html"><div class="logo"></div></a>
     <a class="logo-text" href="index.html">МИР КИНО</a>
-    <a class="vhod_button" href="login">ВОЙТИ</a>
-    <a class="register_button" href="registration">РЕГИСТРАЦИЯ</a>
-    <a class="cinemaline_button" href="https://www.youtube.com/channel/UCpRfMyFCl3ILb3Cr47CW6Kw">КИНОЛЕНТА</a>
+    <a target="_blank" class="vhod_button" href="login.html">ВОЙТИ</a>
+    <a target="_blank" class="register_button" href="register.html">РЕГИСТРАЦИЯ</a>
+    <a target="_blank" class="cinemaline_button" href="https://www.youtube.com/channel/UCpRfMyFCl3ILb3Cr47CW6Kw">КИНОЛЕНТА</a>
     <a class="contacts_button" href="#contacts">КОНТАКТЫ</a>
 </div>
     <span class="h1 one">АКТЕРСКОЕ <span class="red">МАСТЕРСТВО</span><br>
@@ -1309,143 +1279,133 @@ body {
 подготовки киноактёров<br>
 для детей и подростков<br>
 (от 6 до 18 лет) в Тюмени</span>
-    
+
     <a href="javascript:PopUpShow()" class="order">ПОПРОБОВАТЬ БЕСПЛАТНО</a>
-    
+
     <span class="h1 two">КУРСЫ <span class="red">ПОМОГУТ</span></span>
-    
+
     <span class="help one1">СВОБОДНО ЧУВСТВОВАТЬ СЕБЯ В ЛЮБОМ ОБЩЕСТВЕ И УВЕРЕННО ДЕРЖАТЬСЯ НА ПУБЛИКЕ</span>
     <span class="help two2">ЛЕГКО СОЗДАВАТЬ ИНТЕРЕСНЫЕ ОБРАЗЫ И БЫСТРО В НИХ ПЕРЕВОПЛОЩАТЬСЯ</span>
     <span class="help three3">ЛУЧШЕ ПОНИМАТЬ СВОЁ ОКРУЖЕНИЕ И ПРОЩЕ НАХОДИТЬ ОБЩИЙ ЯЗЫК С НОВЫМИ ЛЮДЬМИ</span>
-    
-    <!--
-    <div style="border: 1vw solid red; position: absolute; top: 545vw; left: 0; width: 48.5vw; z-index: 100;"></div>
-    <div style="border: 1vw solid blue; position: absolute; top: 545vw; left: 48.5vw; width: 48.5vw; z-index: 100;"></div>-->
 
-    
+
     <a href="javascript:PopUpShow()" class="order2">ЗАПИСАТЬСЯ НА КУРС</a>
-    
-    
+
+
     <span class="h1 three">ЧТО БУДЕТ <span class="red">НА КУРСЕ</span></span>
-        
-        
+
+
     <div class="cart cart1"><img src="img/cart1.png" class="img">
-        <span>1. РАЗВИТИЕ АКТЁРСКИХ НАВЫКОВ</span></div>    
+        <span>1. РАЗВИТИЕ АКТЁРСКИХ НАВЫКОВ</span></div>
     <div class="cart cart2"><img src="img/cart2.png" class="img">
-        <span>2. КОЛЛЕКТИВНАЯ РАБОТА И СПЛОЧЕНИЕ</span></div>    
+        <span>2. КОЛЛЕКТИВНАЯ РАБОТА И СПЛОЧЕНИЕ</span></div>
     <div class="cart cart3"><img src="img/cart3.png" class="img">
-        <span>3. ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ И ОРАТОРСКОЕ ИСКУССТВО</span></div>    
+        <span>3. ПУБЛИЧНЫЕ ВЫСТУПЛЕНИЯ И ОРАТОРСКОЕ ИСКУССТВО</span></div>
     <div class="cart cart4"><img src="img/cart4.png" class="img">
-        <span>4. АБСОЛЮТНЫЙ КОНТРОЛЬ И БЕЗУПРЕЧНОЕ ВЛАДЕНИЕ СВОИМ ТЕЛОМ</span></div>    
+        <span>4. АБСОЛЮТНЫЙ КОНТРОЛЬ И БЕЗУПРЕЧНОЕ ВЛАДЕНИЕ СВОИМ ТЕЛОМ</span></div>
     <div class="cart cart5"><img src="img/cart5.png" class="img">
-        <span>5. ПОВЫШЕНИЕ УРОВНЯ ОСОЗНАННОСТИ</span></div>       
-        
-        
+        <span>5. ПОВЫШЕНИЕ УРОВНЯ ОСОЗНАННОСТИ</span></div>
+
+
     <div class="carts carts1"><span>Для эффективного освоения программы, курс начинается с развития основных навыков актёра, а именно:<br><br>- Дисциплина (контроль своего поведение относительно обстановки)<br>- Внимание (осознанное накопление информацию о себе и пространстве)<br>- Память (воспроизведение любых ощущений и данных)<br>- Мышечная свобода (100% контроль над своими действиями)<br>- Фантазия (генерация новых образов и интересных идей)<br>- Вера в предлагаемые обстоятельства (ощущение вымышленного процесса как настоящего)</span></div>
-        
-    <div class="carts carts2"><span>Умение работать в команде, одна из ключевых способностей киноактёра.<br><br>Во время работы на съёмочной площадке необходимо видеть и слышать не только своего партнёра, нужно ещё уметь быстро и чётко реагировать на команды и замечания режиссёра.</span></div>    
-        
-    <div class="carts carts3"><span>Каждый человек должен уметь грамотно и красиво доносить свои мысли и чувства.<br><br>Сила звука, поставленный голос, правильное интонирование и безупречная дикция, вот инструменты без которых немыслимо ни одно выступление или работа в кадре.</span></div>    
-        
-    <div class="carts carts4"><span>Настоящий актёр обязательно подчёркивает своё состояние при помощи языка тела.<br><br>Пластика, характер движений и выразительность жестов являются неотъемлемой частью при создании образа и существования в нём на площадке.</span></div>    
-        
-    <div class="carts carts5"><span>Жизнь человека состоит из трёх основных действий:<br>- физическое действие (как мы делаем)<br>- эмоциональное действие (как мы чувствуем)<br>- интеллектуальное действие (как мы думаем)<br><br>Большинство из них мы совершаем автоматически, осознавая и давая оценку лишь постфактум, зачастую забывая о том, что всё настоящее происходит лишь здесь и сейчас.<br><br>Основной задачей актёрского мастерства является дать человеку возможность остановиться и острее прочувствовать все краски жизни, чтобы точнее воспроизводить их на сцене или в кадре!</span></div>    
-        
-        
-        
+
+    <div class="carts carts2"><span>Умение работать в команде, одна из ключевых способностей киноактёра.<br><br>Во время работы на съёмочной площадке необходимо видеть и слышать не только своего партнёра, нужно ещё уметь быстро и чётко реагировать на команды и замечания режиссёра.</span></div>
+
+    <div class="carts carts3"><span>Каждый человек должен уметь грамотно и красиво доносить свои мысли и чувства.<br><br>Сила звука, поставленный голос, правильное интонирование и безупречная дикция, вот инструменты без которых немыслимо ни одно выступление или работа в кадре.</span></div>
+
+    <div class="carts carts4"><span>Настоящий актёр обязательно подчёркивает своё состояние при помощи языка тела.<br><br>Пластика, характер движений и выразительность жестов являются неотъемлемой частью при создании образа и существования в нём на площадке.</span></div>
+
+    <div class="carts carts5"><span>Жизнь человека состоит из трёх основных действий:<br>- физическое действие (как мы делаем)<br>- эмоциональное действие (как мы чувствуем)<br>- интеллектуальное действие (как мы думаем)<br><br>Большинство из них мы совершаем автоматически, осознавая и давая оценку лишь постфактум, зачастую забывая о том, что всё настоящее происходит лишь здесь и сейчас.<br><br>Основной задачей актёрского мастерства является дать человеку возможность остановиться и острее прочувствовать все краски жизни, чтобы точнее воспроизводить их на сцене или в кадре!</span></div>
+
+
+
     <div class="teachers_div">
-    <span class="reclam3">Профессиональная подготовка актёров по программе, состоящей из 5 курсов и рассчитанной на 4 года.<br><br>В программе курса: актёрское мастерство, сценическая речь, сценическое движение и английский язык, а также участие в съёмках кино и иных коммерческих или социальных проектах, реализуемых в Тюмени.</span><a href="javascript:PopUpShow()" class="order3">ЗАПИСАТЬСЯ НА ПРОБНОЕ ЗАНЯТИЕ</a><span class="four">НАШИ <span class="red">ПРЕПОДАВАТЕЛИ</span></span></div>    
-        
+    <span class="reclam3">Профессиональная подготовка актёров по программе, состоящей из 5 курсов и рассчитанной на 4 года.<br><br>В программе курса: актёрское мастерство, сценическая речь, сценическое движение и английский язык, а также участие в съёмках кино и иных коммерческих или социальных проектах, реализуемых в Тюмени.</span><a href="javascript:PopUpShow()" class="order3">ЗАПИСАТЬСЯ НА ПРОБНОЕ ЗАНЯТИЕ</a><span class="four">НАШИ <span class="red">ПРЕПОДАВАТЕЛИ</span></span></div>
+
     <img src="img/belousov.png" class="prepods prep1">
         <div class="prepo1"><span class="name">Константин <span class="red">Белоусов</span></span><br><br><span class="type">основатель театра пластики "Альтер Эго", актёр и режиссёр</span></div>
-        
-        
+
+
     <img src="img/Kwamena.png" class="prepods prep2">
         <div class="prepo2"><span class="name">Kwamena <span class="red">Afful Yamoah</span></span><br><br><span class="type">преподаватель актёрского мастерства на английском</span></div>
-    
+
     <img src="img/belousova.png" class="prepods prep3">
         <div class="prepo3"><span class="name">Валерий <span class="red">Шергин</span></span><br><br><span class="type">актёр, режиссёр, драматург, заведующий литературной частью<br> театра "Ангажемент" и сооснователь "Чёткого театра"</span></div>
-        
-        
+
+
     <img src="img/belousova.png" class="prepods prep4">
         <div class="prepo4"><span class="name">Анастасия <span class="red">Белоусова</span></span><br><br><span class="type">выпускница ТГИК, актриса театра и педагог детского центра</span></div>
-        
-    <img src="img/gladkih.png" class="prepods prep5">
-        <div class="prepo5"><span class="name">Дарья <span class="red">Гладких</span></span><br><br><span class="type">преподователь по сценическому движению</span></div>   
 
-     
-        
+    <img src="img/gladkih.png" class="prepods prep5">
+        <div class="prepo5"><span class="name">Дарья <span class="red">Гладких</span></span><br><br><span class="type">преподователь по сценическому движению</span></div>
+
+
+
     <img src="img/yakov.png" class="prepods prep6">
         <div class="prepo6"><span class="name">Яков <span class="red">Делятин</span></span><br><br><span class="type">автор курсов по сценической речи и актёрскому мастерству</span></div>
-        
-        
-        
-        
+
+
+
+
     <img src="img/basmanova.jpg" class="prepods prep7">
         <div class="prepo7"><span class="name">Нина <span class="red">Басманова</span></span><br><br><span class="type">преподователь по актерскому мастерству</span></div>
-        
- 
+
+
 <div class="div">
 
         <span class="hh1">ПРОДЮССЕРСКИЙ ЦЕНТР <span class="red">«МИР КИНО»</span></span>
-        </div> 
-        
+        </div>
+
         <img src="img/our_face.jpg" class="world">
-        
-        
-        
+
+
+
        <div class="task"><span>Наша главная задач - развитие местного киноискусства и поднятие имиджа Тюменского региона в области кинопроизводства.<br><br>Центр занимается подготовкой, созданием и продвижением фильмов, созданных нашими воспитанниками. Каждый желающий может пройти подготовку и реализоваться в любой сфере кинематографа.<br><br>Загляните в наши социальные сети:</span></div>
 
-        
-        
+
+
    <a href="https://www.instagram.com/mirkino_tmn/">
      <div class="insta">
-                         
+
             </div>   </a>
-        
-        
-                
-            
+
+
+
+
                 <a href="https://vk.com/mirkino_tmn">
-                
+
                     <div class="vk"></div>
                 </a>
-            
+
             <a href="https://www.youtube.com/channel/UCpRfMyFCl3ILb3Cr47CW6Kw">
             <div class="youtube"></div>
-                
-                </a>
-            
-                
-                
-                
-                
-                
-        
 
-        
+                </a>
+
+    
+
         <div class="prive_list_all_in_one">
             <div class="named">
             <span>СТОИМОСТЬ <span class="red">КУРСОВ</span></span></div>
-            
-            
+
+
             <div class="price_list">
                 <span><br>
                 ПРИ  ОПЛАТЕ ЗА:<br>
                 1 МЕСЯЦ - 2900₽<br>
                 3 МЕСЯЦА - 7000₽ (СКИДКА 20%)<br>
-                6 МЕСЯЦЕВ - 12000₽ (СКИДКА 30%)    
+                6 МЕСЯЦЕВ - 12000₽ (СКИДКА 30%)
                 </span>
                 <a href="javascript:PopUpShow()" class="order4" id="contacts">ЗАПИСАТЬСЯ НА ЗАНЯТИЯ</a>
-            
+
             </div>
-            
-            
+
+
         </div>
-        
+
         <div class="contacts">
                 <span class="contact_text">НАШИ <span class="red">КОНТАКТЫ</span></span><br>
-            
+
             <div class="cc"><br><br>
                 <span class="telephone">ТЕЛЕФОН<br>+7 922 394-19-05<br></span><br>
             <br>
@@ -1453,95 +1413,51 @@ body {
             </div>
             <br><br>
             <span>ЗАДАЙТЕ <span class="red">ВОПРОС</span><br> В МЕССЕНДЖЕРЕ</span>
-            
-            
+
+
             </div>
-        
-        
-        
+
+
+
         <span>
-                
+
             <a href="https://api.whatsapp.com/send?phone=79223941905">
                                 <div class="whatsapp"></div>
             </a>
-            
+
                 <a href="https://vk.com/im?sel=-88823661">
-                
+
                     <div class="vk_mes"></div>
                 </a>
-            
+
             <a href="https://t.me/mirkino_tmn">
             <div class="telegramm"></div>
-                
+
                 </a>
-            
-                
-                
-                
-                
-                
-                
+
             </span>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
 <script>
     $(document).ready(function(){
-        
+
         PopUpHide();
     });
-    
+
     function PopUpShow(){
         $("#popup1").hide();
     }
-    
+
     function PopUpHide(){
         $("#popup1").hide();
     }
 </script>
-        
-        
-        
 
-<!--
-    
-<div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-        <a href="javascript:PopUpHide()" class="close">✖</a><br>
-        <div class="order_text"><span class="red">ЗАПИШИТЕСЬ</span><br> НА ПРОБНОЕ ЗАНЯТИЕ!</div>
-        <div class="infow">Во время бесплатного пробного занятия вы узнаете про базовые актёрские навыки, попробуете применить их на практике и познакомитесь с программой подготовки начинающих киноактёров!</div>
-    <br>
-        
-        <label><input class="username" placeholder="Имя" type="name"></label>
-        <label><input class="phone" placeholder="Телефон" type=""></label>
-            
-        <div class="agree_div">
-            <div class="check"><input type="checkbox" class="checkbox"></div>
-            <span class="agree">Согласен с политикой <br>&nbsp;&nbsp;&nbsp;&nbsp;конфиденциальности</span>
-        </div>
-    </div>
-</div>
-        
--->
-        
-        
-        
         <div class="carte"><span class="cart_r">МЫ НА <span class="red">КАРТЕ</span></span></div>
-        
+        <a class="carta" target="_blank" href="https://www.google.com/maps/place/57%C2%B008'35.2%22N+65%C2%B033'01.1%22E/@57.1430858,65.5499531,18.75z/data=!4m5!3m4!1s0x0:0xf8c09dd64110028!8m2!3d57.143112!4d65.5503"> <img src="img/api2.png"> </a>
 
-        
+
 
 </body>
 </html>
