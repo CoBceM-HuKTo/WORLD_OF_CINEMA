@@ -1,5 +1,6 @@
 import flask
 from flask_login import LoginManager, login_user, login_required, logout_user
+from flask import Flask,render_template, redirect
 from data import db_session
 from data.users import User
 from flask import Flask, redirect, render_template
@@ -14,59 +15,8 @@ class RegFrom(FlaskForm):
     repeat_password = PasswordField('Повторите пароль', validators=[DataRequired()])
     username = StringField('Имя пользователя', validators=[DataRequired()])
     submit = SubmitField('Зарегистрироваться')
-
-
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 class LoginForm(FlaskForm):
     email = StringField('Почта', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
@@ -77,9 +27,11 @@ class LoginForm(FlaskForm):
 app = Flask(__name__)
 
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 
 @app.route('/registration', methods=['GET', 'POST'])
@@ -102,6 +54,7 @@ def reg():
     return render_template('register.html', title='Зарегистрироваться', form=form)
 
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
@@ -116,6 +69,7 @@ def login():
                                message="Неправильный логин или пароль",
                                form=form)
     return render_template('login.html', title='Авторизация', form=form)
+
 
 
 if __name__ == '__main__':
