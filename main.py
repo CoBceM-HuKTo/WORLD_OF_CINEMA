@@ -1,7 +1,7 @@
+import flask
 from flask_login import LoginManager, login_user, login_required, logout_user
 from data import db_session
 from data.users import User
-import datetime
 from flask import Flask, redirect, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField
@@ -19,18 +19,11 @@ class RegFrom(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('Почта', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
-    remember_me = BooleanField('Запомнить меня')
+    # remember_me = BooleanField('Запомнить меня')
     submit = SubmitField('Войти')
 
 
 app = Flask(__name__)
-app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(
-    days=365
-)
-app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
-
-login_manager = LoginManager()
-login_manager.init_app(app)
 
 
 @app.route('/')
@@ -38,14 +31,7 @@ def index():
     return render_template('base.html')
 
 
-@login_manager.user_loader
-def load_user(user_id):
-    db_session.global_init("db/blogs.db")
-    db_sess = db_session.create_session()
-    return db_sess.query(User).get(user_id)
-
-
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/registration', methods=['GET', 'POST'])
 def reg():
     form = RegFrom()
     if form.validate_on_submit():
@@ -58,11 +44,11 @@ def reg():
             user.name = form.username.data
             db_sess.add(user)
             db_sess.commit()
-            return redirect('/login')
-        return render_template('registration.html',
+            return redirect('/')
+        return render_template('register.html',
                                message="пароли не совпадают",
                                form=form)
-    return render_template('registration.html', title='Зарегистрироваться как администратор', form=form)
+    return render_template('register.html', title='Зарегистрироваться', form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -79,13 +65,6 @@ def login():
                                message="Неправильный логин или пароль",
                                form=form)
     return render_template('login.html', title='Авторизация', form=form)
-
-
-@app.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return redirect("/")
 
 
 if __name__ == '__main__':
